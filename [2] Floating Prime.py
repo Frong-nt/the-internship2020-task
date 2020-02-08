@@ -2,7 +2,7 @@ import sympy
 
 def main():
     listOfNum = []
-     # count of each number of digit for input number
+     # count of each number of decimal for input number
     listOfDecimal =[]
 
     while(True):
@@ -10,7 +10,7 @@ def main():
         if num=="0.0":
             break
         else: 
-            # count float digit
+            # count float decimal
             lenOfFloat = num[::-1].find('.')
             listOfDecimal.append(lenOfFloat)
             listOfNum.append(float(num))
